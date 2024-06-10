@@ -11,10 +11,10 @@
         <module name="HotelDetailsService (1)" />
         <module name="HotelDetailsService (2)" />
         <module name="userDetailsService" />
-        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ApiGateway" target="17" />
       <module name="HotelDetailsService" target="17" />
     </bytecodeTargetLevel>
   </component>
