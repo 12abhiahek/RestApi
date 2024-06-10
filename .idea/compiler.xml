@@ -11,6 +11,7 @@
         <module name="HotelDetailsService (1)" />
         <module name="HotelDetailsService (2)" />
         <module name="userDetailsService" />
+        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="HotelDetailsService" options="-parameters" />
       <module name="HotelDetailsService (1)" options="-parameters" />
       <module name="HotelDetailsService (2)" options="-parameters" />

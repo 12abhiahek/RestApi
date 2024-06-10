@@ -13,17 +13,20 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name="micro_users")
+
 public class User {
     @Id
-    @Column(name="ID")
+    @Column
     private String userId;
-    @Column(name="Name")
+    @Column
     private String name;
-    @Column(name="email")
+    @Column
     private String email;
-    @Column(name="about")
+    @Column
     private String about;
 
+    @Transient
+    private List<Hotel>hotels=new ArrayList<>();
 
     public String getUserId() {
         return userId;
@@ -68,4 +71,8 @@ public class User {
     }
     @Transient
    private List<Rating> ratings=new ArrayList<>();
+
+
+
+
 }

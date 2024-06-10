@@ -1,5 +1,9 @@
 package com.example.microservice.userDetailsService.Entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,11 +13,19 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name="Rating")
 public class Rating {
+    @Id
+    @Column
     private String ratingId;
+    @Column
     private String userId;
+    @Column
     private String hotelId;
+    @Column
     private String rating;
+    @Column
     private String feedback;
 
     public String getRatingId() {
